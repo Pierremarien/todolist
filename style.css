@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(69, 107, 230);
+}
+.app {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 600px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+.container {
+  padding: 25px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 25px rgba(0,0,0,0.3);
+  border-radius: 10px;
+
+}
+#wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+#wrapper input {
+  width: 100%;
+  background-color: transparent;
+  color: #111111;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid rgb(201, 201, 201);
+  padding: 15px 8px;
+}
+#wrapper input:focus {
+  outline: none;
+  border-color: rgb(69, 107, 230);
+}
+#wrapper button {
+  position: relative;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(69, 107, 230);
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+#tasks {
+  margin-top: 17px;
+  border-radius: 8px;
+  width: 100%;
+  position: relative;
+  padding: 17px 8px;
+}
+.task {
+  background-color: white;
+  padding: 12px 18px;
+  display: grid;
+  grid-template-columns:  4fr 1fr 1fr;
+  gap: 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+  align-items: center;
+  cursor: pointer;
+}
+
+.task:not(:first-child) {
+  margin-top: 15px;
+}
+
+.task span {
+  font-size: 17px;
+  font-weight: 400;
+  word-break: break-all;
+}
+.task button {
+  color: white;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.edit {
+  background-color: rgb(69, 107, 230);
+}
+.delete {
+  background-color: rgb(235, 18, 18);
+}
+#pending-tasks span {
+  color: rgb(69, 107, 230);
+}
+
+#error {
+  text-align: center;
+  background-color: white;
+  color: rgb(235, 18, 18);
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 12px;
+  display: none;
+}
